@@ -143,7 +143,7 @@ while($row = mysqli_fetch_array($search3)) {
 
  
  <?php
-$sql = "SELECT * FROM Customer WHERE PurchNum >2";
+$sql = "SELECT * FROM Customer WHERE PurchNum > 2";
 $search4 = mysqli_query($con,$sql);
 $o = 0;
 
@@ -164,8 +164,8 @@ $arraylist = array();
 while($row = mysqli_fetch_array($search4)) {
 echo '<tr>';
 
-  echo '<td>' . $row['Last Name'] . '</td>';
-  echo '<td>' . $row['Number of Purchases'] . '</td>';
+  echo '<td>' . $row['Last'] . '</td>';
+  echo '<td>' . $row['PurchNum'] . '</td>';
 
  echo '</tr>';
  $o++;
@@ -178,6 +178,17 @@ echo '<tr>';
 <strong>JOIN ASSIGNMENT - TITLE OF LATEST ITEM ADDED</strong>
 <p>
 
+<?php
+$sql = "SELECT Customer.Last, Bookdetails.Title FROM Customer INNER JOIN Bookdetails 
+ON Customer.LastCart = Bookdetails.bid";
+$search5 = mysqli_query($con,$sql);
+$o = 0;
+
+$arraylist = array();
+
+?>
+
+
 <table class="display" cellspacing="0" width="100%">
     <thead  style="background-color: #848482; color: #ffffff;" >
 		<tr>
@@ -188,31 +199,20 @@ echo '<tr>';
 
 
 
-<?php
-$sql = "SELECT Customer.Last, Media.CHAN_NAME FROM Customer INNER JOIN Media ON Customer.LastClick = Media.CHAN_ID";
-$search3 = mysqli_query($con,$sql);
-$o = 0;
-
-$arraylist = array();
-
-?>
-
-
-
  <?php
  //STUDENT COMMENT: 
 //$search5 = 
  
-//while($row = mysqli_fetch_array($search5)) {
-// echo '<tr>';
+while($row = mysqli_fetch_array($search5)) {
+echo '<tr>';
 
-// echo '<td>' . $row['xx'] . '</td>';
-//  echo '<td>' . $row['xx'] . '</td>';
+echo '<td>' . $row['Last'] . '</td>';
+echo '<td>' . $row['Title'] . '</td>';
 
-// echo '</tr>';
-//$o++;
-// } 
-// ?>
+echo '</tr>';
+$o++;
+ } 
+ ?>
  
 </table>
 
@@ -222,6 +222,8 @@ $arraylist = array();
 
  <?php
 //STUDENT COMMENT: 
+
+$search1 = mysqli_query($con,"SELECT * FROM `Customer`");
 
 while($row = mysqli_fetch_array($search1)) {
 //STUDENT COMMENT:
