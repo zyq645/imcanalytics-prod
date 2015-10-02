@@ -160,7 +160,7 @@ $arraylist = array();
     </thead>	
 
  <?php
-//STUDENT COMMENT:
+//STUDENT COMMENT: I don't really understand what $arraylist means here and what echo and $o++ means here
 while($row = mysqli_fetch_array($search4)) {
 echo '<tr>';
 
@@ -221,7 +221,7 @@ $o++;
 <p>
 
  <?php
-//STUDENT COMMENT: 
+//STUDENT COMMENT:  what mysqli_fetch_array means
 
 $search1 = mysqli_query($con,"SELECT * FROM `Customer`");
 
@@ -255,7 +255,11 @@ mysqli_close($con);
   print_r($arraylist);
   
 //STUDENT QUESTION - WHY/WHEN USE ARRAY INSTEAD OF TABLE?:  
-
+// Array is static and stored in local environment like indexed. So it is really useful
+// and quick forus when we know the position of an element and we want to access or alter 
+// the element. Tables are useful when you need to relate two values like doing a merge  
+// (relational table). When we want to know the value that is associated with another 
+// value, table is faster justlike the inner join assignment that we have doned.
 ?>
 
 </body>
