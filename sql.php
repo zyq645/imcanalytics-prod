@@ -18,7 +18,9 @@ th,td {
 </head>
 <body>
 
-<strong>BASIC SQL SELECT EXAMPLE - CUSTOMERS (Table):</strong>
+
+<strong>
+BASIC SQL SELECT EXAMPLE - CUSTOMERS (Table):</strong>
 <p>
 
 <?php
@@ -254,13 +256,15 @@ mysqli_close($con);
 //STUDENT COMMENT:
   print_r($arraylist);
   
-//STUDENT QUESTION - WHY/WHEN USE ARRAY INSTEAD OF TABLE?:  
-// Array is static and stored in local environment like indexed. So it is really useful
-// and quick forus when we know the position of an element and we want to access or alter 
-// the element. Tables are useful when you need to relate two values like doing a merge  
-// (relational table). When we want to know the value that is associated with another 
-// value, table is faster justlike the inner join assignment that we have doned.
-?>
 
+?>
+<div>
+<p>STUDENT QUESTION - WHY/WHEN USE ARRAY INSTEAD OF TABLE?:  
+Array is static and stored in local environment an. It is kinda like indexed. So it is really useful
+and quick for us when we know the position of an element and we want to access or change 
+the element. Tables are more useful when you need to relate two values. For example, if we want
+the item purchased by customer with customer_id xxxx, table is faster just like the inner 
+join assignment that we have doned.</p>
+</div>
 </body>
 
