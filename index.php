@@ -5,15 +5,23 @@
 		 $GREETING = 'Thank you '. $UNAME.'.';
 
 		 } else { 
-		 $GREETING = 'Welcome Guest. <a href="#" class="my_popup_open">Log on</a> for recommendations.'; 
+		 $GREETING = 'Welcome Guest. <a href="#" 
+		 class="my_popup_open">
+		 Log on</a> for recommendations.'; 
 		 }
 		 $CARTCOUNT = 0;
 		 
 ?>
 
+
+
 <html>
 <!--THIS IS HTML COMMENT SYNTAX -->
+<a href="http://www.google.com"  onClick="ga('send', 'event', 'ENGAGEMENT', 'CLICK', 'Test');"> Go to Google </a>
 
+<a href="http://www.amazon.com"  onClick="ga('send', 'event', 'ENGAGEMENT', 'CLICK', 'Add to Cart');"> Add to Cart </a>
+
+<a href="http://www.bing.com"  onClick="ga('send', 'event', 'ENGAGEMENT', 'CLICK', 'Learn More');"> Learn More </a>
  <head>
 
  
@@ -110,6 +118,17 @@
 
 //This is JS comment syntax.
 //cookie will go here.
+
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68559037-1', 'auto');
+  ga('send', 'pageview');
 
 </script>
 
