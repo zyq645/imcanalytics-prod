@@ -199,7 +199,7 @@ if (mysqli_connect_errno()) {
 		else if(bid == '2'){
 		var bookname = $( "#book2" ).val();
 		var bookprice = $( "#book2price" ).val();
-		$("#showbookdeets").html("Vacuum<p>$9.99"); 
+		$("#showbookdeets").html(bookname + "<p>" + bookprice); 
 		$("#bookshelf").val('2'); 
 	// Student Comment: Pop-Up for book2
 		 var fromcart = $( "#iscart" ).val();
@@ -211,7 +211,7 @@ if (mysqli_connect_errno()) {
 			else if(bid == '3'){
 		var bookname = $( "#book3" ).val();
 		var bookprice = $( "#book3price" ).val();
-		$("#showbookdeets").html("Teeth<p>$14.99"); 
+		$("#showbookdeets").html(bookname + "<p>" + bookprice); 
 		$("#bookshelf").val('3'); 
 	// Student Comment: Pop-Up for book3
 		 var fromcart = $( "#iscart" ).val();
@@ -222,7 +222,7 @@ if (mysqli_connect_errno()) {
 			else if(bid == '4'){
 		var bookname = $( "#book4" ).val();
 		var bookprice = $( "#book4price" ).val();
-		$("#showbookdeets").html("August<p>$12.99"); 
+		$("#showbookdeets").html(bookname + "<p>" + bookprice); 
 		$("#bookshelf").val('4'); 
 	// Student Comment: Pop-Up for book4
 		 var fromcart = $( "#iscart" ).val();
