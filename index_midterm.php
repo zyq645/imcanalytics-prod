@@ -361,6 +361,7 @@ function post(path, params, method) {
 <!-- Student Comment: Modify Slot2 -->
  <div id="two" style="padding:10px;">
 	<?php echo $BOOKID2; ?>
+<!-- Student Comment: Use PHP language to extract and display pic related to Book2 -->	
 	<img src="img/<?php echo $BOOKPIC2 ?>" style="float:left; margin-right:6px; height: 100px;">
 <!-- Student Comment - Added bookprice. made book dynamic for slot2 -->
     <input type="hidden" id="book2" value="<?php echo $BOOKTITLE2 ?>">
@@ -374,13 +375,22 @@ function post(path, params, method) {
 	<p>
 	<input type="button" value="Learn More" id="book2button" onClick="$(this).DeetsBox(2)";>
 	</div>
+	
+	
 <!-- Student Comment: Modify Slot3 -->	
  <div id="three" style="padding:10px;">
 	<?php echo $BOOKID3; ?>
-	<img src="img/" style="float:left; margin-right:6px; height: 100px;">
-    <input type="hidden" id="book3" value="">
-	<strong></strong><p>
-	by <p>
+<!-- Student Comment: Use PHP language to extract and display pic related to Book3 -->	
+	<img src="img/<?php echo $BOOKPIC3 ?>" style="float:left; margin-right:6px; height: 100px;">
+<!-- Student Comment - Added bookprice. made book dynamic for slot2 -->
+    <input type="hidden" id="book3" value="<?php echo $BOOKTITLE3 ?>">
+    <input type="hidden" id="book1price" value="<?php echo $BOOKPRICE3 ?>">
+<!-- Student Comment - Blod Slot3 Title -->
+	<strong><?php echo $BOOKTITLE3 ?></strong><p>
+<!-- Student Comment - Added Slot3 Author -->
+	by <?php echo $BOOKAUTH3 ?><p>
+<!-- Student Comment - Added Slot3 Description -->
+	<?php echo $BOOKDESC3 ?>
 	<p>
 	<input type="button" value="Learn More" id="book3button" onClick="$(this).DeetsBox(3)";>
 	</div>
