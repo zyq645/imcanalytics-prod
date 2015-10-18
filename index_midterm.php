@@ -429,7 +429,7 @@ if($n > 4){ ?>
     <input type="hidden" id="book4" value="<?php echo $BOOKTITLE4 ?>">
     <input type="hidden" id="book1price" value="<?php echo $BOOKPRICE4 ?>">
 <!-- Student Comment - Blod Slot4 Title -->
-	<strong><?php echo $BOOKTITLE4 ?></strong><p>
+	<strong></strong><p>
 <!-- Student Comment - Added Slot4 Author -->
 	by <?php echo $BOOKAUTH4 ?><p>
 <!-- Student Comment - Added Slot4 Description -->
