@@ -197,6 +197,8 @@ if (mysqli_connect_errno()) {
 		 $("#deetcta").text('Purchase'); }
 		}
 		else if(bid == '2'){
+		var bookname = $( "#book2" ).val();
+		var bookprice = $( "#book2price" ).val();
 		$("#showbookdeets").html("Vacuum<p>$9.99"); 
 		$("#bookshelf").val('2'); 
 	// Student Comment: Pop-Up for book2
@@ -207,6 +209,8 @@ if (mysqli_connect_errno()) {
 		
 		}
 			else if(bid == '3'){
+		var bookname = $( "#book3" ).val();
+		var bookprice = $( "#book3price" ).val();
 		$("#showbookdeets").html("Teeth<p>$14.99"); 
 		$("#bookshelf").val('3'); 
 	// Student Comment: Pop-Up for book3
@@ -216,6 +220,8 @@ if (mysqli_connect_errno()) {
 		 $("#deetcta").text('Purchase'); }
 		}
 			else if(bid == '4'){
+		var bookname = $( "#book4" ).val();
+		var bookprice = $( "#book4price" ).val();
 		$("#showbookdeets").html("August<p>$12.99"); 
 		$("#bookshelf").val('4'); 
 	// Student Comment: Pop-Up for book4
