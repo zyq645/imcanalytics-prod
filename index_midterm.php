@@ -199,14 +199,30 @@ if (mysqli_connect_errno()) {
 		else if(bid == '2'){
 		$("#showbookdeets").html("Vacuum<p>$9.99"); 
 		$("#bookshelf").val('2'); 
+	// Student Comment: Pop-Up for book2
+		 var fromcart = $( "#iscart" ).val();
+		 if(fromcart != 0){
+		 
+		 $("#deetcta").text('Purchase'); }
+		
 		}
 			else if(bid == '3'){
 		$("#showbookdeets").html("Teeth<p>$14.99"); 
 		$("#bookshelf").val('3'); 
+	// Student Comment: Pop-Up for book3
+		 var fromcart = $( "#iscart" ).val();
+		 if(fromcart != 0){
+		 
+		 $("#deetcta").text('Purchase'); }
 		}
 			else if(bid == '4'){
 		$("#showbookdeets").html("August<p>$12.99"); 
 		$("#bookshelf").val('4'); 
+	// Student Comment: Pop-Up for book4
+		 var fromcart = $( "#iscart" ).val();
+		 if(fromcart != 0){
+		 
+		 $("#deetcta").text('Purchase'); }
 		}
 		$('#bookdeets').popup('show');
     };
@@ -361,16 +377,16 @@ function post(path, params, method) {
 <!-- Student Comment: Modify Slot2 -->
  <div id="two" style="padding:10px;">
 	<?php echo $BOOKID2; ?>
-<!-- Student Comment: Use PHP language to extract and display pic related to Book2 -->	
+<!-- Student Comment: Use PHP language to extract and display pic related to Book2 from backstage dataset-->	
 	<img src="img/<?php echo $BOOKPIC2 ?>" style="float:left; margin-right:6px; height: 100px;">
-<!-- Student Comment - Added bookprice. made book dynamic for slot2 -->
+<!-- Student Comment - Use PHP language Added bookprice. made book dynamic for slot2 from backstage dataset -->
     <input type="hidden" id="book2" value="<?php echo $BOOKTITLE2 ?>">
     <input type="hidden" id="book1price" value="<?php echo $BOOKPRICE2 ?>">
-<!-- Student Comment - Blod Slot2 Title -->
+<!-- Student Comment - Use PHP to take Slot2 Title from backstage dataset-->
 	<strong><?php echo $BOOKTITLE2 ?></strong><p>
-<!-- Student Comment - Added Slot2 Author -->
+<!-- Student Comment - Use PHP to added Slot2 Author from backstage dataset-->
 	by <?php echo $BOOKAUTH2 ?><p>
-<!-- Student Comment - Added Slot2 Description -->
+<!-- Student Comment - Use PHP to added Slot2 Description from backstage dataset-->
 	<?php echo $BOOKDESC2 ?>
 	<p>
 	<input type="button" value="Learn More" id="book2button" onClick="$(this).DeetsBox(2)";>
