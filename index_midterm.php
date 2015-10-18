@@ -358,17 +358,23 @@ function post(path, params, method) {
 	<?php } ?>
 	</div>
 	
-
+<!-- Student Comment: Modify Slot2 -->
  <div id="two" style="padding:10px;">
 	<?php echo $BOOKID2; ?>
-	<img src="img/" style="float:left; margin-right:6px; height: 100px;">
-    <input type="hidden" id="book2" value="">
-	<strong></strong><p>
-	by <p>
+	<img src="img/<?php echo $BOOKPIC2 ?>" style="float:left; margin-right:6px; height: 100px;">
+<!-- Student Comment - Added bookprice. made book dynamic for slot2 -->
+    <input type="hidden" id="book2" value="<?php echo $BOOKTITLE2 ?>">
+    <input type="hidden" id="book1price" value="<?php echo $BOOKPRICE2 ?>">
+<!-- Student Comment - Blod Slot2 Title -->
+	<strong><?php echo $BOOKTITLE2 ?></strong><p>
+<!-- Student Comment - Added Slot2 Author -->
+	by <?php echo $BOOKAUTH2 ?><p>
+<!-- Student Comment - Added Slot2 Description -->
+	<?php echo $BOOKDESC2 ?>
 	<p>
 	<input type="button" value="Learn More" id="book2button" onClick="$(this).DeetsBox(2)";>
 	</div>
-	
+<!-- Student Comment: Modify Slot3 -->	
  <div id="three" style="padding:10px;">
 	<?php echo $BOOKID3; ?>
 	<img src="img/" style="float:left; margin-right:6px; height: 100px;">
