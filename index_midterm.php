@@ -382,7 +382,7 @@ function post(path, params, method) {
 	<?php echo $BOOKID3; ?>
 <!-- Student Comment: Use PHP language to extract and display pic related to Book3 -->	
 	<img src="img/<?php echo $BOOKPIC3 ?>" style="float:left; margin-right:6px; height: 100px;">
-<!-- Student Comment - Added bookprice. made book dynamic for slot2 -->
+<!-- Student Comment - Added bookprice. made book dynamic for slot3 -->
     <input type="hidden" id="book3" value="<?php echo $BOOKTITLE3 ?>">
     <input type="hidden" id="book1price" value="<?php echo $BOOKPRICE3 ?>">
 <!-- Student Comment - Blod Slot3 Title -->
@@ -400,11 +400,18 @@ function post(path, params, method) {
 if($n > 4){ ?>
  <div id="four" style="padding:10px;">
 	<?php echo $BOOKID4; ?>
-	<img src="img/" style="float:left; margin-right:6px; height: 100px;">
+<!-- Student Comment: Use PHP language to extract and display pic related to Book4 -->	
+	<img src="img/<?php echo $BOOKPIC4 ?>" style="float:left; margin-right:6px; height: 100px;">
 <!-- ASSIGNMENT 2 ADDITIONS - CREATED hidden input WITH UNIQUE ID -->
-    <input type="hidden" id="book4" value="">
-	<strong></strong><p>
-	by <p>
+<!-- Student Comment - Added bookprice. made book dynamic for slot4 -->
+    <input type="hidden" id="book4" value="<?php echo $BOOKTITLE4 ?>">
+    <input type="hidden" id="book1price" value="<?php echo $BOOKPRICE4 ?>">
+<!-- Student Comment - Blod Slot4 Title -->
+	<strong><?php echo $BOOKTITLE4 ?></strong><p>
+<!-- Student Comment - Added Slot4 Author -->
+	by <?php echo $BOOKAUTH4 ?><p>
+<!-- Student Comment - Added Slot4 Description -->
+	<?php echo $BOOKDESC4 ?>
 	<p>
 	<input type="button" value="Learn More" id="book4button" onClick="$(this).DeetsBox(4)";>
 	</div>
